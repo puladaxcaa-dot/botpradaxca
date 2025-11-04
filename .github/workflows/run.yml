@@ -20,9 +20,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r NmTcp/requirements.txt || true
+          pip install -r requirements.txt || true
 
       - name: Run script
         run: |
-          cd NmTcp
           python Nm.py
